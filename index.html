@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>|| dailog component</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <button class="btn" onclick="show('alert')">alert</button>
+      <button class="btn" onclick="show('simple')">simple</button>
+      <button class="btn" onclick="show('conformation')">conformation</button>
+    </div>
+    <!-- alert dailog -->
+    <div class="dailog-bg hidden alert">
+      <div class="dailog-box">
+        <div class="dailog-comp-contant">
+          <div class="dailog-heading">
+            <h2 class="dailog-h2">Dialog header</h2>
+            <p class="dailog-p">Dailog body text</p>
+          </div>
+          <div class="dailog-btn-postion">
+            <button class="dailog-btn">ACTION 1</button>
+            <button class="dailog-btn">ACTION 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- simple dailog -->
+    <div class="dailog-bg hidden simple">
+      <div class="dailog-box">
+        <div class="dailog-comp-contant">
+          <div class="dailog-heading">
+            <h2 class="dailog-h2">Dialog header</h2>
+          </div>
+          <div class="dailog-simple-btn-postion">
+            <div class="dailog-item">
+              <img
+                class="dailog-avtar"
+                src="img_avatar.png"
+                alt="avtar"
+                srcset=""
+              />
+              <p class="dailog-item-name">Item 1</p>
+            </div>
+            <div class="dailog-item">
+              <img
+                class="dailog-avtar"
+                src="img_avatar.png"
+                alt="avtar"
+                srcset=""
+              />
+              <p class="dailog-item-name">Item 2</p>
+            </div>
+            <div class="dailog-item">
+              <img
+                class="dailog-avtar"
+                src="img_avatar.png"
+                alt="avtar"
+                srcset=""
+              />
+              <p class="dailog-item-name">Item 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!-- conformation dailog -->
+    <div class="dailog-bg hidden conformation">
+      <div class="dailog-box">
+        <div class="dailog-comp-contant">
+          <div class="dailog-heading">
+            <h2 class="dailog-h2">Dialog header</h2>
+          </div>
+          <div class="dailog-simple-btn-postion check-box-overflow">
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 1</p>
+            </div>
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 2</p>
+            </div>
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 3</p>
+            </div>
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 4</p>
+            </div>
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 5</p>
+            </div>
+            <div class="dailog-item">
+              <input class="dailog-radio" type="radio" />
+              <p class="dailog-item-name">Item 6</p>
+            </div>
+          </div>
+          <div class="dailog-btn-postion confo-btn">
+            <button class="dailog-btn">ACTION 1</button>
+            <button class="dailog-btn">ACTION 2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

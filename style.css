@@ -1,0 +1,178 @@
+/* icons  link */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+/* font link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+/* || reset css */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* || reset for btn */
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* variables */
+:root {
+  --main-box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  --hover-effect-color: #d6d6d6;
+  --light-gray: rgb(210, 210, 210);
+  --dark-grey-font: rgb(102, 102, 102);
+
+  --badge-blue: rgb(63, 80, 181);
+  --snackbar-dark: rgb(51, 51, 51);
+  --snackbar-font: hsla(0, 0%, 100%, 0.87);
+  /* --snackbar-purple: rgb(187, 134, 252); */
+  --snackbar-purple: #6200ee;
+}
+
+/* || basic layout main container*/
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* || genral styling */
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f7f7f7;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1rem;
+}
+p {
+  font-size: 0.9rem;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+.btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  margin: 2rem;
+  box-shadow: var(--main-box-shadow);
+  color: white;
+  background-color: var(--badge-blue);
+}
+
+.btn:hover {
+  filter: brightness(85%);
+}
+/* dailog background */
+.dailog-bg {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(128 128 128 / 72%);
+  z-index: 11;
+}
+
+/* outer box */
+.dailog-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 15rem;
+
+  border-radius: 5px;
+  box-shadow: var(--main-box-shadow);
+}
+/* contant */
+.dailog-comp-contant {
+  margin: 1rem;
+}
+
+.dailog-h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+.dailog-p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+}
+
+/* dailog position */
+.dailog-btn-postion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+/* dailog btn */
+.dailog-btn {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  color: var(--snackbar-purple);
+  cursor: pointer;
+}
+.dailog-btn:hover {
+  background-color: #6300ee0d;
+}
+.hidden {
+  display: none;
+}
+.dailog-simple-btn-postion {
+  display: flex;
+  flex-direction: column;
+}
+.dailog-avtar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  margin-left: 0.4rem;
+  border-radius: 50%;
+}
+.dailog-item {
+  padding: 0.2rem 0rem;
+  display: flex;
+  line-height: 1;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.dailog-item:hover {
+  background-color: rgba(128, 128, 128, 0.116);
+}
+.dailog-item-name {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2.5;
+  padding-left: 1rem;
+}
+.dailog-radio {
+  margin: 0.8rem 0rem 0.8rem 0.8rem;
+}
+
+.check-box-overflow {
+  height: 8rem;
+  overflow: auto;
+}
+.confo-btn {
+  margin-top: 1rem;
+}
